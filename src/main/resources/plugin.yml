@@ -1,0 +1,24 @@
+name: TimeVIP
+Author: 11ThPlugins
+version: '1.0'
+main: com.example.timevip.TimeVIP
+api-version: '1.17'
+depend: [LuckPerms]
+softdepend: [PlaceholderAPI]
+
+commands:
+  timevip:
+    description: TimeVIP commands
+    usage: |
+      §6TimeVIP commands:
+      §e/timevip give <player <group> <time> §7- Give rank with time
+      §e/timevip reload §7- Reload config
+    permission: timevip.give
+
+permissions:
+  timevip.give:
+    description: TimeVIP give permision
+    default: op
+  timevip.reload:
+    description: Reload permission
+    default: op 
